@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap");
+@keyframes wave {
+  0%, 100% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(20deg);
+  }
+  75% {
+    transform: rotateZ(-20deg);
+  }
+}
+body {
+  margin: 0;
+  font-family: "Fuzzy Bubbles";
+  background-color: #38506b;
+  color: white;
+}
+
+.grid-hello {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+  align-items: center;
+  gap: 2em;
+}
+.grid-hello h1 {
+  text-align: right;
+}
+.grid-hello img {
+  aspect-ratio: 1/1;
+  width: 3em;
+  animation: wave linear 1s infinite;
+}
+
+h2 {
+  text-align: center;
+}
+
+.flex-img {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.flex-img img {
+  border: 3px solid white;
+}
+
+/*# sourceMappingURL=style.css.map */
